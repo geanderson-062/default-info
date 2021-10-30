@@ -1,0 +1,102 @@
+body { background-color: white; /*cor do fundo*/ 
+    padding: 0;
+    margin: 0;             
+}
+.foto-perfil{
+    height: 100%; /*autura*/
+    width:auto; /*largura*/
+    max-width: 100%; /*largura maxima*/
+    border-radius: 50%; /*borda arredondada*/
+}
+.corPrimaria{
+    background-color: black;
+}
+.corSecundaria{ /*cor do navi bar/ barra do inicio*/
+    background-color: rgb(87, 7, 7);
+}
+p{
+    font-family:lato,'helvetica neue', Arial,Helvetica,sans-serif;
+    color:black !important; /*cor da letra*/
+}
+.icones {
+    padding-left: 5px;
+}
+.titulosBrancos{
+    text-decoration: underline;
+    text-underline-position: bellow ;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+.titulosVerdes{ 
+    text-decoration: underline;
+    text-underline-position: bellow ;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(87, 7, 7) ;
+}
+.textoBranco{
+    color: white !important;
+}
+.jumbotron{
+    margin-bottom:0px;
+}
+.textoFooter{
+    margin:0px;
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+html{
+    scroll-behavior: smooth ; /*diminuindo a velocidade do scrol*/
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*carrosel inicio ver no index carrosel*/
+
+*{
+    margin:0; padding: 0;
+}
+.carrosel{
+
+    width: 500px; /*largura*/
+    height: 500px; /*altura*/
+    outline: 3px solid black;
+    overflow: hidden;  /*esconder imagens pre carregadas*/
+    margin: 50px auto;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0,7);
+}
+
+.carrosel ul{
+
+    display: flex;
+    list-style: none;
+    width: 1200px;
+    height: 250px;
+}
+
+.carrosel li{
+
+    position: relative;
+    animation: slide 15s infinite ease-out;
+}
+
+@keyframes slide{
+
+    0%{left: 0px} /*tempo de mover os slides*/
+    20%{left: 0px}
+
+    30%{left:-500px}
+    50%{left:-500px}
+
+    60%{left:-1000px}
+    90%{left: -1000px}
+
+    100%{left: 0px;}
+}
+
+/* fim do carrosel inicio ver no index carrosel*/
